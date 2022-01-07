@@ -3,7 +3,7 @@ import { RouterContext } from './BrowserRouter';
 
 const Switch = ({ children }) => {
     const { location } = useContext(RouterContext);
-    const routes = [...children];
+    const routes = Array.isArray(children) ? children : [children];
     return (
         <>
             {routes.map(child => {
