@@ -10,9 +10,7 @@ const Switch = ({ children }) => {
                 const {
                     props: { path },
                 } = child;
-                if (location.pathname === path) {
-                    return child;
-                }
+                if (location.pathname === path) return child;
                 return null;
             })}
         </>
