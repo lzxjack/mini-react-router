@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { RouterContext } from './Router';
+import { RouterContext } from './BrowserRouter';
 
 const Switch = ({ children }) => {
     const { location } = useContext(RouterContext);

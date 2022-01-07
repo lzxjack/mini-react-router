@@ -4,7 +4,7 @@ import { createBrowserHistory } from 'history';
 const history = createBrowserHistory();
 export const RouterContext = createContext();
 
-const Router = ({ children }) => {
+const BrowserRouter = ({ children }) => {
     const [location, setLocation] = useState(window.location);
     useEffect(() => {
         // 监听路由变化
@@ -20,4 +20,4 @@ const Router = ({ children }) => {
     );
 };
 
-export default Router;
+export default BrowserRouter;
